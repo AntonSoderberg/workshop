@@ -4,6 +4,8 @@ body {
     overflow-x: hidden;
 }
 
+/* STYLE FÖR VÅRAN NAVIGATION BAR */
+
 nav {
     position: fixed;
     top: 0;
@@ -24,14 +26,22 @@ li {
     line-height: 7vh;
     margin-left: 5vw;
     color: white;
-    font-size: 20px;
+    font-size: 1vw;
 }
+
+/* STYLE FÖR VÅRAN FÖRSTA SIDA */
+
+/* NÄR MAN VILL STYLA EN SPECIFIK "CLASS" SKRIVER MAN "." FÖLJT UTAN NAMNET PÅ KLASSEN */
 
 .homePageContainer {
     height: 70vh;
     width: 80vw;
     margin: 15vh 0 0 10vw;
 }
+
+/* VÄNSTRA DELEN AV SIDAN */
+
+/* LÄGG IN DIN EGNA BILD OCH ÄNDRA FILSÖKVÄGEN. TA ÄVEN BORT GRÅSKALAN! */
 
 .homePageLeft {
     float: left;
@@ -43,6 +53,8 @@ li {
     filter: grayscale(1);
 }
 
+/* HÖGRA DELEN AV SIDAN */
+
 .homePageRight {
     float: right;
     height: 100%;
@@ -51,7 +63,7 @@ li {
 
 h1 {
     letter-spacing: 10px;
-    font-size: 50px;
+    font-size: 4vw;
 }
 
 .homePageH1 {
@@ -59,18 +71,20 @@ h1 {
 }
 
 h2 {
-    margin-top: 10%;
+    margin-top: 6%;
     letter-spacing: 6px;
-    font-size: 30px;
+    font-size: 2vw;
     font-weight: normal;
     float: right;
 }
 
 p {
-    margin-top: 24%;
-    font-size: 20px;
+    margin-top: 18%;
+    font-size: 1vw;
     text-align: right;
 }
+
+/* STYLE FÖR VÅRAN ANDRA SIDA */
 
 .skillPageContainer {
     height: 80vh;
@@ -79,11 +93,14 @@ p {
 }
 
 .skillPageH1 {
+    font-size: 3vw;
     width: 80vw;
     margin: 0;
     text-align: center;
     position: absolute;
 }
+
+/* VÄNSTRA DELEN AV SIDAN */
 
 .skillPageLeft {
     height: 75vh;
@@ -131,6 +148,8 @@ p {
     width: 70%;
 }
 
+/* HÖGRA DELEN AV SIDAN */
+
 .skillPageRight {
     height: 65vh;
     margin-top: 15vh;
@@ -151,12 +170,14 @@ p {
 }
 
 .skillPhoto {
-    height: 42vh;
-    width: 42vh;
+    height: 20vw;
+    width: 20vw;
     background-position: center;
     background-size: cover;
     filter: grayscale(1);
 }
+
+/* ÄNDRA BILDERNA! TA ÄVEN BORT GRÅSKALAN */
 
 #leftPhoto {
     float: left;
@@ -168,9 +189,18 @@ p {
     background-image: url(image3.jpg);
 }
 
+/* STYLE FÖR VÅRAN FOOTER */
+
 footer {
-    height: 10vh;
+    height: 15vh;
     background-color: black;
     width: 100vw;
     margin-top: 10vh;
+}
+
+.footerText {
+    position: absolute;
+    margin: 1em 0px 0px 10vw;
+    text-align: left;
+    color: white;
 }

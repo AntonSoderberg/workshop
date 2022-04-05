@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <!-- NAMNET PÅ DOKUMENTET -->
+    <!-- NAMNET PÅ DOKUMENTET + DET SOM VISAS SOM NAMN PÅ FLIKEN -->
 
     <title>Document</title>
 
@@ -14,15 +14,15 @@
 
 <body>
 
-    <!-- NAV STÅR FÖR NAVIGATION -->
+    <!-- "NAV" STÅR FÖR "NAVIGATION". DET ÄR DEN SOM VISAS LÄNGST UPP PÅ SIDAN OCH HJÄLPER ANVÄNDAREN HITTA PÅ SIDAN -->
 
     <nav>
 
-        <!-- UL STÅR FÖR UNORDERED LIST -->
+        <!-- "UL" STÅR FÖR "UNORDERED LIST". NÄR MAN SKAPAR EN NAVIGATION BAR SÅ BRUKAR MAN BYGGA DET SOM EN LISTA OCH "UL" DET GÖR SÅ ATT VI INTE FÅR SIFFROR BREVID ALLA KNAPPAR I VÅR NAV BAR. VILL VI HA SIFFROR KAN VI ANVÄNDA "OL" -->
 
         <ul>
 
-            <!-- LI STÅR FÖR LIST ITEM -->
+            <!-- "LI" STÅR FÖR "LIST ITEM". DET ÄR DESSA SOM VISAS PÅ SIDAN. TESTA LÄGG TILL EN LIST ITEM ELLER ÄNDRA NAMNET PÅ DE SOM REDAN FINNS! -->
 
             <li>HOME</li>
             <li>MY SKILLS</li>
@@ -32,23 +32,27 @@
 
     </nav>
 
-    <!-- EN DIV ÄR EN TOM LÅDA. CLASS GÖR SÅ ATT VI KAN GE DENNA SPECIFIKA TAG EN STIL, UTAN ATT PÅVERKA ANDRA DIV-TAGGAR -->
+    <!-- EN "DIV" ÄR EN TOM LÅDA. CLASS GÖR SÅ ATT VI KAN GE DENNA SPECIFIKA TAG EN STIL, UTAN ATT PÅVERKA ANDRA DIV-TAGGAR. EN DIV SOM MAN LÄGGER ANDRA DIV-TAGGAR I BRUKAR OFTAST KALLAS FÖR EN "CONTAINER" -->
+
+    <!-- NÄR MAN SKAPAR EN CLASS BÖR MAN TÄNKA PÅ NAMNET SÅ MAN KOMMER IHÅG VAD DET ÄR. SKULLE KLASSEN BARA HA ETT SLUMPAT NAMN ÄR DET LÄTT ATT TAPPA BORT SIG NÄR MAN SKA GE DEN EN STYLE T.EX. -->
 
     <div class="homePageContainer">
+
+        <!-- VI SKAPAR TVÅ TILL TAGGAR SOM DELAR UPP DEN FÖRSTA TAGGEN. MYCKET I WEBBUTVECKLING BYGGER PÅ ATT LÄGGA LÅDOR I LÅDOR FÖR ATT FÅ FRAM LAYOUTEN MAN VILL HA -->
 
         <div class="homePageLeft"></div>
 
         <div class="homePageRight">
 
-            <!-- H1 STÅR FÖR HEADER 1. DET FINNS FRÅN H1 -> H6 -->
+            <!-- H1 STÅR FÖR HEADER 1. DET FINNS FRÅN H1 -> H6. ÄNDRA TEXTEN OCH LÄGG IN DITT NAMN! -->
 
-            <h1 class="homePageH1">FIRSTNAME LASTNAME</h1>
+            <h1 class="homePageH1">FIRSTNAME <br> LASTNAME</h1>
 
-            <!-- HÄR ÄR EN H2 TAG. DEN ÄR MINDRE ÄN H1 -->
+            <!-- HÄR ÄR EN H2 TAG. DEN ÄR MINDRE ÄN H1. VAD SKULLE DU KLASSA DIG SJÄLV SOM? EXPERT PÅ NÅGOT? TITELN PÅ DITT DRÖMJOBB? -->
 
             <h2>MY TITLE / EXPERTISE</h2>
             
-            <!-- P STÅR FÖR PARAGRAPH. DET ÄR HELT ENKELT EN TEXTRUTA -->
+            <!-- P STÅR FÖR PARAGRAPH. DET ÄR HELT ENKELT EN TEXTRUTA. SKRIV LITE OM DIG SJÄLV! -->
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas, ipsam pariatur voluptatum amet facilis? Quos provident amet, omnis sapiente repellat nostrum earum aut labore dolores eligendi fuga assumenda ipsa quis quaerat corporis reiciendis quas libero, facere ratione asperiores repudiandae. Excepturi sequi nemo quod quae ipsa at totam. Saepe ipsam debitis natus voluptates laborum repudiandae nisi, veniam commodi!             
             
@@ -68,15 +72,29 @@
 
         <div class="skillPageLeft">
 
+            <!-- HÄR ÄR ETT BRA EXEMPEL PÅ HUR MAN LÄGGER TAGGAR I TAGGAR FÖR ATT FÅR ATT SKAPA LAYOUTEN MAN VILL HA -->
+
+            <!-- DEN FÖRSTA TAGGEN KALLAS FÖR EN CONTAINER. DET ÄR I DEN HÄR VI VILL SKAPA VÅRAT ELEMENT -->
+
             <div class="skillContainer">
+
+                <!-- VI SKAPAR SEN EN <P> TAG FÖR ATT LÄGGA IN TEXT  -->
+
                 <p class="skillTitle">SKILL / PERSONALITY TRAIT 1</p>
+                
+                <!-- VI SKAPAR DEN GRÅA BAKGRUNDEN FÖR VÅR "BAR" -->
+
                 <div class="skillBarBg">
 
-                    <!-- ID ÄR UNEGÄR SAMMA SOM CLASS -->
+                    <!-- SEN SKAPAR VI DET VITA SOM FYLLER UPP BAREN PROCENTUELLT -->
+
+                    <!-- ID ÄR UNEGÄR SAMMA SOM CLASS. DET ÄR I PRINCIP ETT SÄTT ATT DELA UPP KLASSER I MINDRE GRUPPER -->
 
                     <div class="skillBar" id="bar1"></div>
                 </div>
             </div>
+
+            <!-- VI GÖR DET 4 GÅNGER FÖR ATT SKAPA 4 LIKADANA ELEMENT. VAD ÄR DINA FÄRDIGHETER? ÄNDRA OCKSÅ I CSS-DOKUMENTET FÖR ATT VISA HUR BRA / DÅLIG DU ÄR PÅ RESPEKTIVE FÄRDIGHET! -->
 
             <div class="skillContainer">
                 <p class="skillTitle">SKILL / PERSONALITY TRAIT 2</p>
@@ -103,9 +121,13 @@
 
         <div class="skillPageRight">
 
+            <!-- SKRIV LITE OM DINA FÄRDIGHETER! -->
+
             <p class="skillPageP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quas, ipsam pariatur voluptatum amet facilis? Quos provident amet, omnis sapiente repellat nostrum earum aut labore dolores eligendi fuga assumenda ipsa quis quaerat corporis reiciendis quas libero, facere ratione asperiores repudiandae. Excepturi sequi nemo quod quae ipsa at totam.</p>
 
             <div class="skillPagePhotoContainer">
+
+                <!-- HÄR ANVÄNDER VI ID IGEN FÖR ATT KUNNA LÄGGA ENA BILDEN PÅ VÄNSTRA DELEN AV VÅR CONTAINER OCH DEN ANDRA BILDEN PÅ DEN HÖGRA DELEN -->
 
                 <div class="skillPhoto" id="leftPhoto"></div>
                 <div class="skillPhoto" id="rightPhoto"></div>
@@ -120,7 +142,13 @@
 
     <footer>
 
+        <!-- <b> STÅR FÖR BOLD OCH GÖR TEXTEN FETSTILT -->
 
+        <p class="footerText">
+           <b>COPYRIGHT FIRSTNAME LASTNAME 2022 | ALL RIGHTS RESERVED</b><br>
+           E-MAIL: example@gmail.com<br>
+           TEL: 076 123 4567
+        </p>
 
     </footer>
 
